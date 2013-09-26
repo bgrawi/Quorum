@@ -45,7 +45,7 @@ function HomeCtrl($scope, socket) {
 }
 
 app.factory('socket', function ($rootScope) {
-	  var socket = io.connect();
+	  var socket = io.connect('https://totoro.csh.rit.edu:8724');
 	  return socket;
 	  /*
 	  return {
